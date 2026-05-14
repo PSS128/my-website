@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pramukh</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,300;1,6..72,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="is-threshold">
+
+  <!-- Atmosphere — fixed behind everything -->
+  <div class="threshold-atmosphere" aria-hidden="true">
+    <div class="threshold-haze"></div>
+    <svg class="threshold-veil" viewBox="0 0 1600 1000" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+      <g fill="none" stroke="currentColor" vector-effect="non-scaling-stroke">
+        <!-- distant horizon contours -->
+        <path d="M -80 700 Q 260 672 560 686 T 1240 668 T 1720 682" stroke-width="0.6" opacity="0.55"/>
+        <path d="M -80 740 Q 320 720 640 730 T 1300 718 T 1720 728" stroke-width="0.5" opacity="0.4"/>
+        <path d="M -80 786 Q 380 776 720 784 T 1340 776 T 1720 784" stroke-width="0.5" opacity="0.28"/>
+        <!-- faint vertical hints (architectural) -->
+        <line x1="240" y1="120" x2="240" y2="900" stroke-width="0.4" opacity="0.18"/>
+        <line x1="1360" y1="160" x2="1360" y2="900" stroke-width="0.4" opacity="0.16"/>
+        <!-- distant points of illumination -->
+        <circle class="distant-light" cx="1100" cy="320" r="1.2" fill="currentColor"/>
+        <circle class="distant-light" cx="380" cy="240" r="1" fill="currentColor"/>
+        <circle class="distant-light" cx="820" cy="172" r="0.8" fill="currentColor"/>
+        <circle class="distant-light" cx="1290" cy="560" r="1" fill="currentColor"/>
+        <circle class="distant-light" cx="180" cy="480" r="0.7" fill="currentColor"/>
+      </g>
+    </svg>
+    <div class="threshold-luminance" aria-hidden="true"></div>
+    <div class="threshold-paper" aria-hidden="true"></div>
+    <div class="threshold-grain"></div>
+    <div class="threshold-scan" aria-hidden="true"></div>
+    <div class="threshold-cursor-glow"></div>
+  </div>
+
+  <!-- Edge marginalia -->
+  <span class="edge-mark edge-mark-tl" aria-hidden="true"></span>
+  <span class="edge-mark edge-mark-tr" aria-hidden="true"></span>
+  <span class="edge-mark edge-mark-bl" aria-hidden="true"></span>
+  <span class="edge-mark edge-mark-br" aria-hidden="true"></span>
+
+
+  <!-- First viewport: glyph · fragment · name -->
+  <main class="threshold">
+
+    <!-- Decorative ornate pen — left margin -->
+    <div class="threshold-pen" aria-hidden="true">
+      <svg viewBox="0 0 60 240" xmlns="http://www.w3.org/2000/svg">
+        <g fill="none" stroke="currentColor" vector-effect="non-scaling-stroke">
+          <!-- nib tip -->
+          <path d="M 30 6 L 22 34 L 38 34 Z" stroke-width="0.7"/>
+          <!-- nib slit -->
+          <line x1="30" y1="14" x2="30" y2="32" stroke-width="0.45"/>
+          <!-- breather hole -->
+          <circle cx="30" cy="22" r="1.4" stroke-width="0.4"/>
+          <!-- collar / section -->
+          <path d="M 22 34 L 22 40 L 38 40 L 38 34" stroke-width="0.55"/>
+          <line x1="22" y1="37" x2="38" y2="37" stroke-width="0.3" opacity="0.55"/>
+          <!-- cap band ornament -->
+          <line x1="20" y1="44" x2="40" y2="44" stroke-width="0.55"/>
+          <line x1="20" y1="48" x2="40" y2="48" stroke-width="0.3" opacity="0.65"/>
+          <line x1="20" y1="52" x2="40" y2="52" stroke-width="0.55"/>
+          <!-- barrel -->
+          <path d="M 22 52 L 22 188 Q 22 192 26 192 L 34 192 Q 38 192 38 188 L 38 52" stroke-width="0.6"/>
+          <!-- ornate filigree along barrel -->
+          <g stroke-width="0.32" opacity="0.6">
+            <path d="M 26 78 Q 30 82 34 78 Q 30 74 26 78 Z"/>
+            <path d="M 28 90 Q 30 92 32 90"/>
+            <path d="M 26 108 Q 30 112 34 108 Q 30 104 26 108 Z"/>
+            <path d="M 28 120 Q 30 122 32 120"/>
+            <path d="M 26 138 Q 30 142 34 138 Q 30 134 26 138 Z"/>
+            <path d="M 28 150 Q 30 152 32 150"/>
+            <path d="M 26 168 Q 30 172 34 168 Q 30 164 26 168 Z"/>
+          </g>
+          <!-- end cap -->
+          <line x1="22" y1="188" x2="38" y2="188" stroke-width="0.45"/>
+          <path d="M 24 192 L 24 206 Q 24 210 28 210 L 32 210 Q 36 210 36 206 L 36 192" stroke-width="0.55"/>
+          <line x1="24" y1="200" x2="36" y2="200" stroke-width="0.3" opacity="0.6"/>
+          <!-- finial ball with ring -->
+          <circle cx="30" cy="218" r="5.5" stroke-width="0.55"/>
+          <circle cx="30" cy="218" r="2.4" stroke-width="0.32" opacity="0.7"/>
+          <line x1="30" y1="210" x2="30" y2="212.5" stroke-width="0.4"/>
+        </g>
+      </svg>
+    </div>
+
+    <!-- Decorative book outline — right margin -->
+    <div class="threshold-book" aria-hidden="true">
+      <svg viewBox="0 0 152 198" xmlns="http://www.w3.org/2000/svg">
+        <g fill="none" stroke="currentColor" vector-effect="non-scaling-stroke">
+
+          <!-- Page block: bottom edge (tail), showing layered pages -->
+          <rect x="14" y="180" width="124" height="10" stroke-width="0.55"/>
+          <line x1="16" y1="183" x2="136" y2="183" stroke-width="0.2" opacity="0.55"/>
+          <line x1="16" y1="185" x2="136" y2="185" stroke-width="0.2" opacity="0.45"/>
+          <line x1="16" y1="187" x2="136" y2="187" stroke-width="0.2" opacity="0.35"/>
+          <line x1="16" y1="189" x2="136" y2="189" stroke-width="0.2" opacity="0.25"/>
+
+          <!-- Page block: right edge (fore-edge), showing layered pages -->
+          <rect x="138" y="14" width="10" height="166" stroke-width="0.55"/>
+          <line x1="141" y1="16" x2="141" y2="178" stroke-width="0.2" opacity="0.55"/>
+          <line x1="143" y1="16" x2="143" y2="178" stroke-width="0.2" opacity="0.45"/>
+          <line x1="145" y1="16" x2="145" y2="178" stroke-width="0.2" opacity="0.35"/>
+          <line x1="147" y1="16" x2="147" y2="178" stroke-width="0.2" opacity="0.25"/>
+
+          <!-- Front cover -->
+          <rect x="10" y="10" width="128" height="170" rx="2" stroke-width="0.7"/>
+
+          <!-- Spine indication: deeper line + faint inner edge -->
+          <line x1="14" y1="14" x2="14" y2="176" stroke-width="0.5" opacity="0.7"/>
+          <line x1="16" y1="14" x2="16" y2="176" stroke-width="0.22" opacity="0.4"/>
+
+          <!-- Spine raised bands (typical of bound books) -->
+          <line x1="10" y1="48" x2="14" y2="48" stroke-width="0.4" opacity="0.7"/>
+          <line x1="10" y1="96" x2="14" y2="96" stroke-width="0.4" opacity="0.7"/>
+          <line x1="10" y1="144" x2="14" y2="144" stroke-width="0.4" opacity="0.7"/>
+
+          <!-- Inner gilt double border -->
+          <rect x="22" y="22" width="104" height="146" stroke-width="0.4" opacity="0.7"/>
+          <rect x="25" y="25" width="98" height="140" stroke-width="0.22" opacity="0.45"/>
+
+          <!-- Upper title plate -->
+          <line x1="38" y1="46" x2="118" y2="46" stroke-width="0.45"/>
+          <line x1="42" y1="48.5" x2="114" y2="48.5" stroke-width="0.22" opacity="0.55"/>
+          <line x1="38" y1="74" x2="118" y2="74" stroke-width="0.45"/>
+          <line x1="42" y1="76.5" x2="114" y2="76.5" stroke-width="0.22" opacity="0.55"/>
+
+          <!-- Central monogram -->
+          <g transform="translate(74, 102)">
+            <path d="M 0 -17 L 17 0 L 0 17 L -17 0 Z" stroke-width="0.45" opacity="0.85"/>
+            <path d="M 0 -12 L 12 0 L 0 12 L -12 0 Z" stroke-width="0.3" opacity="0.55"/>
+            <circle cx="0" cy="0" r="4" stroke-width="0.38"/>
+            <circle cx="0" cy="0" r="1.4" fill="currentColor" stroke="none" opacity="0.75"/>
+          </g>
+
+          <!-- Lower flourish -->
+          <path d="M 44 144 Q 74 154 104 144" stroke-width="0.32" opacity="0.6"/>
+          <path d="M 52 148 Q 74 153 96 148" stroke-width="0.28" opacity="0.45"/>
+          <path d="M 60 151 Q 74 153.5 88 151" stroke-width="0.22" opacity="0.32"/>
+
+          <!-- Corner ornaments -->
+          <g stroke-width="0.32" opacity="0.6">
+            <path d="M 30 30 L 38 30 M 30 30 L 30 38"/>
+            <path d="M 118 30 L 110 30 M 118 30 L 118 38"/>
+            <path d="M 30 160 L 38 160 M 30 160 L 30 152"/>
+            <path d="M 118 160 L 110 160 M 118 160 L 118 152"/>
+          </g>
+
+          <!-- Cover wear: faint scratches and patches -->
+          <g stroke-width="0.18" opacity="0.35">
+            <line x1="32" y1="40" x2="46" y2="42"/>
+            <line x1="100" y1="42" x2="116" y2="40"/>
+            <line x1="34" y1="120" x2="50" y2="121"/>
+            <line x1="92" y1="128" x2="116" y2="129"/>
+            <path d="M 28 60 Q 30 64 32 62"/>
+            <path d="M 116 86 Q 118 90 120 88"/>
+            <line x1="40" y1="166" x2="56" y2="166"/>
+            <line x1="98" y1="168" x2="116" y2="168"/>
+            <line x1="68" y1="38" x2="80" y2="38"/>
+            <line x1="64" y1="172" x2="80" y2="172"/>
+          </g>
+
+          <!-- Worn / softened corner suggestions -->
+          <path d="M 138 10 Q 136 11 134 11" stroke-width="0.4" opacity="0.7"/>
+          <path d="M 138 180 L 136 178 L 134 180" stroke-width="0.32" opacity="0.55"/>
+          <path d="M 14 180 L 16 178 L 18 180" stroke-width="0.32" opacity="0.55"/>
+
+        </g>
+      </svg>
+    </div>
+
+    <section class="threshold-vista">
+      <div class="threshold-glyph" aria-hidden="true">
+        <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="40" cy="40" r="22" fill="none" stroke="currentColor" stroke-width="0.55"/>
+          <line x1="6" y1="40" x2="74" y2="40" stroke="currentColor" stroke-width="0.45" stroke-opacity="0.78"/>
+          <line x1="40" y1="6" x2="40" y2="74" stroke="currentColor" stroke-width="0.45" stroke-opacity="0.78"/>
+          <circle cx="40" cy="40" r="1.6" fill="currentColor"/>
+          <!-- faint outer halo ticks -->
+          <g stroke="currentColor" stroke-width="0.4" stroke-opacity="0.45">
+            <line x1="40" y1="2" x2="40" y2="6"/>
+            <line x1="40" y1="74" x2="40" y2="78"/>
+            <line x1="2" y1="40" x2="6" y2="40"/>
+            <line x1="74" y1="40" x2="78" y2="40"/>
+          </g>
+        </svg>
+      </div>
+
+      <p class="threshold-fragment">
+        Some things only become visible with distance.
+      </p>
+
+      <p class="threshold-name">Pramukh</p>
+    </section>
+
+    <div class="threshold-descent" aria-hidden="true">
+      <span class="threshold-descent-line"></span>
+    </div>
+  </main>
+
+  <!-- Beyond the threshold — quiet fragments and paths -->
+  <section class="reverie">
+    <ol class="reverie-fragments">
+      <li>Meaning accumulates slowly.</li>
+      <li>The world reveals itself unevenly.</li>
+    </ol>
+
+    <nav class="reverie-paths" aria-label="Other pages">
+      <a href="about.html" data-soft-link>About</a>
+      <a href="projects.html" data-soft-link>Projects</a>
+      <a href="resume.html" data-soft-link>Resume</a>
+      <a href="tennis.html" data-soft-link>Tennis</a>
+      <a href="https://medium.com/@pramukhshankar28" target="_blank" rel="noopener">Writing</a>
+    </nav>
+  </section>
+
+  <footer class="threshold-footer">
+    <p class="threshold-footer-line" aria-hidden="true"></p>
+    <div class="threshold-footer-links">
+      <a href="mailto:pramukhshankar28@gmail.com">email</a>
+      <a href="https://www.linkedin.com/in/pramukh-shankar-09989121a/" target="_blank" rel="noopener">linkedin</a>
+      <a href="https://github.com/PSS128" target="_blank" rel="noopener">github</a>
+      <a href="https://medium.com/@pramukhshankar28" target="_blank" rel="noopener">medium</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

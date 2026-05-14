@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Me | Pramukh</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="logo"><a href="index.html">Pramukh</a></div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="resume.html">Resume</a>
+      <a href="tennis.html">Tennis</a>
+      <a href="https://medium.com/@pramukhshankar28" target="_blank" rel="noopener">Writing</a>
+    </nav>
+  </header>
+
+  <main class="about-page">
+    <!-- Hero: two-column -->
+    <section class="about-hero">
+      <div class="about-hero-text">
+        <p class="about-eyebrow">About</p>
+        <h1 class="about-headline">Hi, I'm Pramukh.</h1>
+        <p class="about-lede">
+          I'm interested in solving problems related to social impact and improving how we
+          interact with the world.
+        </p>
+      </div>
+      <div class="about-hero-visual" aria-hidden="true">
+        <svg class="about-graphic" viewBox="0 0 320 320" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <radialGradient id="nodeGrad" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#222" stop-opacity="0.9"/>
+              <stop offset="100%" stop-color="#222" stop-opacity="0.4"/>
+            </radialGradient>
+          </defs>
+          <!-- Faint grid -->
+          <g stroke="#cfcac1" stroke-width="0.5" opacity="0.5">
+            <line x1="0" y1="60" x2="320" y2="60"/>
+            <line x1="0" y1="120" x2="320" y2="120"/>
+            <line x1="0" y1="180" x2="320" y2="180"/>
+            <line x1="0" y1="240" x2="320" y2="240"/>
+            <line x1="60" y1="0" x2="60" y2="320"/>
+            <line x1="120" y1="0" x2="120" y2="320"/>
+            <line x1="180" y1="0" x2="180" y2="320"/>
+            <line x1="240" y1="0" x2="240" y2="320"/>
+          </g>
+          <!-- Connections -->
+          <g stroke="#666" stroke-width="0.9" opacity="0.55" fill="none">
+            <line x1="60" y1="80" x2="160" y2="120"/>
+            <line x1="160" y1="120" x2="240" y2="60"/>
+            <line x1="160" y1="120" x2="220" y2="200"/>
+            <line x1="160" y1="120" x2="80" y2="220"/>
+            <line x1="80" y1="220" x2="220" y2="200"/>
+            <line x1="220" y1="200" x2="260" y2="270"/>
+            <line x1="80" y1="220" x2="140" y2="280"/>
+            <line x1="240" y1="60" x2="280" y2="130"/>
+          </g>
+          <!-- Nodes -->
+          <g>
+            <circle cx="60" cy="80" r="4.5" fill="url(#nodeGrad)"/>
+            <circle cx="160" cy="120" r="6.5" fill="#222"/>
+            <circle cx="240" cy="60" r="4" fill="url(#nodeGrad)"/>
+            <circle cx="280" cy="130" r="3.5" fill="url(#nodeGrad)"/>
+            <circle cx="220" cy="200" r="5" fill="url(#nodeGrad)"/>
+            <circle cx="80" cy="220" r="5.5" fill="url(#nodeGrad)"/>
+            <circle cx="260" cy="270" r="3.5" fill="url(#nodeGrad)"/>
+            <circle cx="140" cy="280" r="4" fill="url(#nodeGrad)"/>
+          </g>
+          <!-- Accent ring around primary node -->
+          <circle cx="160" cy="120" r="14" fill="none" stroke="#222" stroke-width="0.7" opacity="0.35"/>
+          <circle cx="160" cy="120" r="22" fill="none" stroke="#222" stroke-width="0.5" opacity="0.18"/>
+        </svg>
+      </div>
+    </section>
+
+    <!-- What I care about -->
+    <section class="about-section reveal">
+      <p class="about-section-label">What I care about</p>
+      <p>
+        I've always been an analytical person, which is what initially drew me to data science.
+        But more than that, I'm interested in how we can leverage new technology to improve our
+        lives and raise our standard of living—especially in ways that create meaningful, positive
+        impact.
+      </p>
+      <div class="about-tags">
+        <span class="about-tag">Decision-Making</span>
+        <span class="about-tag">Health Equity</span>
+        <span class="about-tag">Data-Driven Policy</span>
+      </div>
+    </section>
+
+    <!-- What I've worked on -->
+    <section class="about-section reveal">
+      <p class="about-section-label">What I've worked on</p>
+      <p>
+        Projects across a range of topics: how technology can hypothetically influence election
+        outcomes, analyses of the Hispanic population in Colorado, the state of air quality
+        across the U.S., and a platform that aggregates open election positions by county for
+        communities and local governments.
+      </p>
+      <a href="projects.html" class="about-cta">View Projects <span class="cta-arrow">→</span></a>
+    </section>
+
+    <!-- Now -->
+    <section class="about-section reveal">
+      <p class="about-section-label">Now</p>
+      <p>
+        I'm an incoming graduate student at NYU Tandon, pursuing a Master's in
+        Urban Data Science through CUSP.
+      </p>
+      <p>
+        Outside of academics, I enjoy reading and writing. I regularly turn my notes into
+        articles and share them on Medium.
+      </p>
+      <a href="https://medium.com/@pramukhshankar28" target="_blank" rel="noopener" class="about-cta">Read on Medium <span class="cta-arrow">→</span></a>
+    </section>
+
+    <!-- Personal -->
+    <section class="about-section about-personal reveal">
+      <p class="about-section-label">Outside of work</p>
+      <p class="about-personal-intro"><em>The non-resume bits.</em></p>
+      <p>
+        In my free time, I like to watch anime—my all-time favorite is <em>Dr. Stone</em>, and
+        right now I'm watching <em>The Disastrous Life of Saiki K.</em> I'm also a fan of
+        video games, especially the Kingdom Rush, Epic Battle Fantasy series, and The Battle
+        Cats. And sleeping—I love to sleep. Who doesn't?
+      </p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a href="mailto:pramukhshankar28@gmail.com">email</a>
+    <a href="https://www.linkedin.com/in/pramukh-shankar-09989121a/" target="_blank" rel="noopener">linkedin</a>
+    <a href="https://github.com/PSS128" target="_blank" rel="noopener">github</a>
+    <a href="https://medium.com/@pramukhshankar28" target="_blank" rel="noopener">medium</a>
+  </footer>
+
+  <script>
+    // Scroll reveal — fade + slight upward motion as sections enter view
+    (function () {
+      var els = document.querySelectorAll('.reveal');
+      if (!('IntersectionObserver' in window)) {
+        els.forEach(function (el) { el.classList.add('is-visible'); });
+        return;
+      }
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            io.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+      els.forEach(function (el) { io.observe(el); });
+    })();
+  </script>
+</body>
+</html>

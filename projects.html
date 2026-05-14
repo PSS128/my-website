@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | Pramukh</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="logo"><a href="index.html">Pramukh</a></div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="resume.html">Resume</a>
+      <a href="tennis.html">Tennis</a>
+      <a href="https://medium.com/@pramukhshankar28" target="_blank" rel="noopener">Writing</a>
+    </nav>
+  </header>
+
+  <main class="content">
+    <h1>Projects</h1>
+    <p class="section-intro">A selection of data and research projects.</p>
+
+    <div class="project">
+      <div class="project-header">
+        <h2>County Health Dashboard</h2>
+        <span class="project-tags">Python &middot; Tableau &middot; Public Health</span>
+      </div>
+      <p>
+        Built an interactive dashboard combining air quality indices, PFAS exposure levels,
+        and public health indicators across U.S. counties. The goal was to surface
+        environmental-health correlations in a format accessible to researchers and
+        policymakers.
+      </p>
+      <a href="https://medium.com/@pramukhshankar28/measuring-health-by-county-in-the-united-states-6b443791214f" class="project-link" target="_blank" rel="noopener">Read on Medium →</a>
+    </div>
+
+    <div class="project">
+      <div class="project-header">
+        <h2>Colorado Latino Presence Analysis</h2>
+        <span class="project-tags">R &middot; ACS &middot; Census Data</span>
+      </div>
+      <p>
+        Used American Community Survey and decennial census workflows to study demographic,
+        economic, and household patterns across Colorado counties. Focused on shifts in
+        population distribution, income, and labor force participation over a 20-year window.
+      </p>
+    </div>
+
+    <div class="project">
+      <div class="project-header">
+        <h2>Environmental Exposure &amp; Cancer Risk</h2>
+        <span class="project-tags">R &middot; SQL &middot; Epidemiology</span>
+      </div>
+      <p>
+        Analyzed relationships between environmental contaminant exposure data and
+        cancer incidence rates at the county level. Combined EPA, CDC, and SEER datasets
+        to model risk factors while controlling for demographic and socioeconomic variables.
+      </p>
+    </div>
+
+    <div class="project">
+      <img src="project%20images/tennis_player_styles.png" alt="Tennis player style clusters" class="project-img" />
+      <div class="project-header">
+        <h2>Classifying Tennis Player Styles</h2>
+        <span class="project-tags">Python &middot; k-means &middot; DBSCAN &middot; Render</span>
+      </div>
+      <p>
+        An interactive web app that scrapes pro tennis match data from Tennis Abstract and
+        classifies each player's style across three dimensions: rally length, shot frequency,
+        and winner types. Players are benchmarked against tour averages in real time.
+      </p>
+      <p>
+        <strong>Rally length</strong> — players with shorter average points are labeled
+        <em>First-Strike</em> (aggressive, looks to finish early); longer points earn the
+        <em>Grinder</em> label (patient, comfortable in extended rallies).
+      </p>
+      <p>
+        <strong>Shot frequency</strong> — players are labeled <em>Likes to hit Forehand</em>,
+        <em>Likes to hit Backhand</em>, or <em>Likes to hit Groundstrokes</em> based on their
+        forehand/backhand split relative to the tour average.
+      </p>
+      <p>
+        <strong>Shot variety &amp; net play</strong> — players above the tour average in slices,
+        dropshots, or lobs earn the <em>Variety</em> tag; those who approach the net more than
+        average are labeled <em>Likes to go to net</em>.
+      </p>
+      <p class="project-finding">
+        Data sourced from the Tennis Abstract match charting project.
+      </p>
+      <a href="https://evaluating-tennis-styles.onrender.com/" class="project-link" target="_blank" rel="noopener">View app →</a>
+    </div>
+
+    <div class="project">
+      <img src="project%20images/pokemon-go-logo-wood-background-new-augmented-reality-game-lets-you-walk-real-world-to-catch-monsters-74496934.jpg" alt="Pokémon" class="project-img" />
+      <div class="project-header">
+        <h2>Pok&eacute;mon Type Prediction &amp; Analysis</h2>
+        <span class="project-tags">Python &middot; scikit-learn &middot; Tableau &middot; Kaggle</span>
+      </div>
+      <p>
+        Two complementary analyses combined into one project. The prediction model trained
+        Random Forest, Decision Tree, LDA, and KNN classifiers on 800+ Pok&eacute;mon entries
+        with 20+ attributes, achieving a ROC AUC of 0.69 and 28.2% accuracy — 5× above the
+        random baseline.
+      </p>
+      <p>
+        The type analysis introduces two scoring metrics visualized in an interactive Tableau
+        dashboard:
+      </p>
+      <p>
+        <strong>Cumulative Defense score</strong> — sum of all damage multipliers received by
+        a type combination (1 = neutral, 2 = super-effective, 4 = double super-effective,
+        0.5 = resist, 0.25 = double resist, 0 = immune). A <em>lower</em> score is better,
+        indicating more resistances and immunities.
+      </p>
+      <p>
+        <strong>Cumulative Coverage score</strong> — sum of the highest damage a type combination
+        can deal against each individual type. A <em>higher</em> score is better, meaning the
+        combination hits more types for super-effective damage.
+      </p>
+      <a href="https://public.tableau.com/views/PokemonTypeAnalysisProject/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link" class="project-link" target="_blank" rel="noopener">View Tableau dashboard →</a>
+      <a href="project%20images/Pokemon_Type_Prediction_Model.html" class="project-link" target="_blank" rel="noopener">View prediction model →</a>
+    </div>
+
+    <div class="project">
+      <div class="project-header">
+        <h2>How Can We Measure Nadal's Dominance at Wimbledon?</h2>
+        <span class="project-tags">R &middot; Statistics &middot; Tennis</span>
+      </div>
+      <p>
+        A statistical analysis of Rafael Nadal's performance at Wimbledon, exploring what
+        metrics best capture his dominance on grass. The project examines win rates, match
+        statistics, and opponent-adjusted performance across his Wimbledon career to ask
+        whether raw titles alone tell the full story — or if deeper indicators like
+        break-point conversion, service dominance, and rally-length profiles reveal more.
+      </p>
+      <a href="project%20images/Tennis%20Presentation%20Poster.pdf" class="project-link" target="_blank" rel="noopener">View poster →</a>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <a href="mailto:pramukhshankar28@gmail.com">email</a>
+    <a href="https://www.linkedin.com/in/pramukh-shankar-09989121a/" target="_blank" rel="noopener">linkedin</a>
+    <a href="https://github.com/PSS128" target="_blank" rel="noopener">github</a>
+    <a href="https://medium.com/@pramukhshankar28" target="_blank" rel="noopener">medium</a>
+  </footer>
+</body>
+</html>

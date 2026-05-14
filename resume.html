@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resume | Pramukh</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ── Navigation ── -->
+  <header class="nav">
+    <div class="logo"><a href="index.html">Pramukh</a></div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="resume.html">Resume</a>
+      <a href="tennis.html">Tennis</a>
+      <a href="https://medium.com/@pramukhshankar28" target="_blank" rel="noopener">Writing</a>
+    </nav>
+  </header>
+
+  <!-- ── Resume page ── -->
+  <main class="resume-page">
+
+    <!-- Top bar: title + controls -->
+    <div class="resume-top-bar">
+      <h1 class="resume-title">RESUME</h1>
+      <div class="resume-controls">
+        <button id="toggle-all-btn" class="toggle-all-btn" aria-label="Expand or collapse all entries">
+          Expand All
+        </button>
+      </div>
+    </div>
+
+    <!-- ── EDUCATION ── -->
+    <section class="resume-section" aria-labelledby="section-education">
+      <h2 class="section-heading" id="section-education">Education</h2>
+
+      <div class="entry">
+        <button class="entry-trigger" aria-expanded="false" aria-controls="entry-ucsb">
+          <span class="entry-left">
+            <span class="entry-title">B.S. Statistics &amp; Data Science &nbsp;·&nbsp; B.A. Economics &nbsp;·&nbsp; Minor in Philosophy</span>
+            <span class="entry-meta">University of California, Santa Barbara &nbsp;·&nbsp; Goleta, CA</span>
+          </span>
+          <span class="entry-right">
+            <span class="entry-date">2021 – 2025</span>
+            <span class="entry-icon" aria-hidden="true">&#8250;</span>
+          </span>
+        </button>
+        <div class="entry-body" id="entry-ucsb" role="region">
+          <ul>
+            <li>Double degree in Statistics &amp; Data Science and Economics with a Minor in Philosophy.</li>
+            <li>Coursework covered regression analysis, causal inference, machine learning, econometrics, spatial statistics, and statistical computing in R and Python.</li>
+            <li>Relevant coursework: Regression Analysis, Time Series, Machine Learning, Econometrics, Spatial Statistics, Data Visualization, Public Policy &amp; Data.</li>
+          </ul>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ── EXPERIENCE ── -->
+    <section class="resume-section" aria-labelledby="section-experience">
+      <h2 class="section-heading" id="section-experience">Experience</h2>
+
+      <div class="entry">
+        <button class="entry-trigger" aria-expanded="false" aria-controls="entry-hil">
+          <span class="entry-left">
+            <span class="entry-title">Research Assistant</span>
+            <span class="entry-meta">Health Innovation Lab, UCSB &nbsp;·&nbsp; Goleta, CA</span>
+          </span>
+          <span class="entry-right">
+            <span class="entry-date">Sept. 2024 – June 2025</span>
+            <span class="entry-icon" aria-hidden="true">&#8250;</span>
+          </span>
+        </button>
+        <div class="entry-body" id="entry-hil" role="region">
+          <ul>
+            <li>Built Python data pipelines to analyze 100K+ cancer-trial and exposure records, reducing analysis time by 40%, enabling facility-level exposure scoring across 20+ counties, and surfacing statistically significant exposure–incidence relationships used in public-health risk evaluation.</li>
+            <li>Automated analysis of 500+ cross-country drug approvals using SQL and visualization tools, reducing regulatory timeline analysis time by 65% and replacing manual spreadsheet workflows.</li>
+            <li>Reduced analysis turnaround time by 60% by automating regression and SQL-based pipelines to screen 200+ chemicals for cancer risk correlations.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="entry">
+        <button class="entry-trigger" aria-expanded="false" aria-controls="entry-aibrt">
+          <span class="entry-left">
+            <span class="entry-title">Research Assistant</span>
+            <span class="entry-meta">American Institute for Behavioral Research and Technology &nbsp;·&nbsp; San Diego, CA</span>
+          </span>
+          <span class="entry-right">
+            <span class="entry-date">June 2023 – Sept. 2023</span>
+            <span class="entry-icon" aria-hidden="true">&#8250;</span>
+          </span>
+        </button>
+        <div class="entry-body" id="entry-aibrt" role="region">
+          <ul>
+            <li>Applied effect size analysis (Cohen's d), z-tests, and Likert-scale modeling to experimental data from 400+ participants to quantify demographic susceptibility to online influence; engineered an R- and Excel-based processing pipeline for CSV and survey data, cutting analysis time by 40%.</li>
+            <li>Aided in development of APA-submitted manuscript; contributed to literature review, journal selection, and revision workflows.</li>
+            <li>Built a vote-shift metric and reproducible calculator using Python and SQL, showing how search results can sway up to 20% of votes.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="entry">
+        <button class="entry-trigger" aria-expanded="false" aria-controls="entry-mucci">
+          <span class="entry-left">
+            <span class="entry-title">Data Intern</span>
+            <span class="entry-meta">Mucci Assessment &nbsp;·&nbsp; San Diego, CA</span>
+          </span>
+          <span class="entry-right">
+            <span class="entry-date">June 2022 – Sept. 2022</span>
+            <span class="entry-icon" aria-hidden="true">&#8250;</span>
+          </span>
+        </button>
+        <div class="entry-body" id="entry-mucci" role="region">
+          <ul>
+            <li>Developed Python pipeline (NumPy, Pandas) to scrape and clean 500+ pediatrician contacts, reducing manual data entry by 10+ hours per week.</li>
+            <li>Developed and deployed a backend scheduling application using Python and SQL, reducing manual processing time by 60% and saving 15+ staff hours per week.</li>
+          </ul>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ── PROJECTS ── -->
+    <section class="resume-section" aria-labelledby="section-projects">
+      <h2 class="section-heading" id="section-projects">Projects</h2>
+
+      <div class="entry">
+        <button class="entry-trigger" aria-expanded="false" aria-controls="entry-thesis">
+          <span class="entry-left">
+            <span class="entry-title">Thesis-Graph &nbsp;·&nbsp; LLM-assisted Argument Mapping App</span>
+            <span class="entry-meta">Next.js &nbsp;·&nbsp; FastAPI &nbsp;·&nbsp; React Flow &nbsp;·&nbsp; LangChain &nbsp;·&nbsp; SQLite</span>
+          </span>
+          <span class="entry-right">
+            <span class="entry-icon" aria-hidden="true">&#8250;</span>
+          </span>
+        </button>
+        <div class="entry-body" id="entry-thesis" role="region">
+          <ul>
+            <li>Developed a full-stack application (Next.js, FastAPI, React Flow) that extracts claims from text and visualizes reasoning as an interactive argument graph with editable nodes and causal links.</li>
+            <li>Implemented backend endpoints for node extraction, edge suggestion, and essay composition using RAG and LLM-powered prompt pipelines.</li>
+            <li>Developed scalable data storage and authentication systems (SQLite, JWT) and built an interactive React Flow visualization layer supporting autosave, version tracking, and dynamic node-edge graph editing.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="entry">
+        <button class="entry-trigger" aria-expanded="false" aria-controls="entry-rfo">
+          <span class="entry-left">
+            <span class="entry-title">Run For Office &nbsp;·&nbsp; Nationbuilder</span>
+            <span class="entry-meta">Python &nbsp;·&nbsp; Playwright &nbsp;·&nbsp; PyMuPDF &nbsp;·&nbsp; OpenAI o1</span>
+          </span>
+          <span class="entry-right">
+            <span class="entry-icon" aria-hidden="true">&#8250;</span>
+          </span>
+        </button>
+        <div class="entry-body" id="entry-rfo" role="region">
+          <ul>
+            <li>Built a domain-whitelisted Playwright crawler for county sites nationwide, capturing 1K+ HTML/PDF links per run and replacing Google Search API workflows—cutting data collection time by 80%.</li>
+            <li>Integrated PyMuPDF and PDFPlumber to standardize PDF processing, facilitating LLM extraction across diverse document formats and reducing data errors by 15% company-wide.</li>
+            <li>Designed grounded LLM extraction at the county level for open offices (OpenAI o1), cutting nationwide collection costs by 70% ($35,000+).</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="entry">
+        <button class="entry-trigger" aria-expanded="false" aria-controls="entry-pokemon">
+          <span class="entry-left">
+            <span class="entry-title">Pok&eacute;mon Type Prediction &amp; Analysis</span>
+            <span class="entry-meta">Python &nbsp;·&nbsp; scikit-learn &nbsp;·&nbsp; Tableau &nbsp;·&nbsp; Kaggle</span>
+          </span>
+          <span class="entry-right">
+            <span class="entry-icon" aria-hidden="true">&#8250;</span>
+          </span>
+        </button>
+        <div class="entry-body" id="entry-pokemon" role="region">
+          <ul>
+            <li>Trained Random Forest, Decision Tree, LDA, and KNN models on 800+ entries with 20+ attributes, achieving ROC AUC of 0.69.</li>
+            <li>Achieved 28.2% prediction accuracy, outperforming the 5.6% random baseline by 5×.</li>
+            <li>Implemented an interactive Tableau dashboard using Kaggle datasets to dynamically visualize and rank Pok&eacute;mon type matchups.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="entry">
+        <button class="entry-trigger" aria-expanded="false" aria-controls="entry-tennis-ml">
+          <span class="entry-left">
+            <span class="entry-title">Classifying Tennis Player Styles</span>
+            <span class="entry-meta">Python &nbsp;·&nbsp; k-means &nbsp;·&nbsp; DBSCAN &nbsp;·&nbsp; Render</span>
+          </span>
+          <span class="entry-right">
+            <span class="entry-icon" aria-hidden="true">&#8250;</span>
+          </span>
+        </button>
+        <div class="entry-body" id="entry-tennis-ml" role="region">
+          <ul>
+            <li>Created a Render-hosted interactive web app that scrapes and analyzes pro tennis match data, classifies player styles from rally length, shot frequency, and winner types, and benchmarks performance against tour averages for real-time insights.</li>
+            <li>Applied k-means, DBSCAN, and fuzzy c-means clustering to segment player styles from match features.</li>
+          </ul>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ── LEADERSHIP ── -->
+    <section class="resume-section" aria-labelledby="section-leadership">
+      <h2 class="section-heading" id="section-leadership">Leadership</h2>
+
+      <div class="entry">
+        <button class="entry-trigger" aria-expanded="false" aria-controls="entry-americorps">
+          <span class="entry-left">
+            <span class="entry-title">Team Leader</span>
+            <span class="entry-meta">AmeriCorps NCCC Forest Corps &nbsp;·&nbsp; Sacramento, CA</span>
+          </span>
+          <span class="entry-right">
+            <span class="entry-date">May 2025 – Oct. 2025</span>
+            <span class="entry-icon" aria-hidden="true">&#8250;</span>
+          </span>
+        </button>
+        <div class="entry-body" id="entry-americorps" role="region">
+          <ul>
+            <li>Led a team of 7 to support reforestation through invasive species removal, stand improvement, and land mapping.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="entry">
+        <button class="entry-trigger" aria-expanded="false" aria-controls="entry-tennis-club">
+          <span class="entry-left">
+            <span class="entry-title">President</span>
+            <span class="entry-meta">UCSB Club Tennis &nbsp;·&nbsp; Goleta, CA</span>
+          </span>
+          <span class="entry-right">
+            <span class="entry-date">Oct. 2021 – June 2025</span>
+            <span class="entry-icon" aria-hidden="true">&#8250;</span>
+          </span>
+        </button>
+        <div class="entry-body" id="entry-tennis-club" role="region">
+          <ul>
+            <li>Managed club operations for 50+ students, coordinating fundraisers, social events, competitive practice sessions, travel logistics, meetings, and tryouts.</li>
+          </ul>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ── SKILLS ── -->
+    <section class="resume-section" aria-labelledby="section-skills">
+      <h2 class="section-heading" id="section-skills">Skills</h2>
+
+      <div class="entry">
+        <button class="entry-trigger" aria-expanded="false" aria-controls="entry-skills">
+          <span class="entry-left">
+            <span class="entry-title">Technical Skills</span>
+            <span class="entry-meta">Languages, libraries, and tools</span>
+          </span>
+          <span class="entry-right">
+            <span class="entry-icon" aria-hidden="true">&#8250;</span>
+          </span>
+        </button>
+        <div class="entry-body" id="entry-skills" role="region">
+          <div class="skills-accordion-grid">
+            <div class="skill-col">
+              <h3>Languages &amp; Tools</h3>
+              <ul>
+                <li>Python</li>
+                <li>R</li>
+                <li>SQL</li>
+                <li>SAS &nbsp;·&nbsp; STATA &nbsp;·&nbsp; SPSS</li>
+                <li>HTML &nbsp;·&nbsp; GIS</li>
+                <li>Tableau &nbsp;·&nbsp; Excel</li>
+              </ul>
+            </div>
+            <div class="skill-col">
+              <h3>Libraries &amp; Frameworks</h3>
+              <ul>
+                <li>NumPy &nbsp;·&nbsp; Pandas</li>
+                <li>Scikit-learn</li>
+                <li>TensorFlow &nbsp;·&nbsp; PyTorch &nbsp;·&nbsp; Keras</li>
+                <li>LangChain</li>
+                <li>Next.js &nbsp;·&nbsp; FastAPI</li>
+                <li>PostgreSQL</li>
+              </ul>
+            </div>
+            <div class="skill-col">
+              <h3>Methods</h3>
+              <ul>
+                <li>Regression &amp; causal inference</li>
+                <li>Machine learning &amp; NLP</li>
+                <li>Spatial &amp; census analysis</li>
+                <li>Data visualization</li>
+                <li>LLM pipelines &amp; RAG</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <a href="mailto:pramukhshankar28@gmail.com">email</a>
+    <a href="https://www.linkedin.com/in/pramukh-shankar-09989121a/" target="_blank" rel="noopener">linkedin</a>
+    <a href="https://github.com/PSS128" target="_blank" rel="noopener">github</a>
+    <a href="https://medium.com/@pramukhshankar28" target="_blank" rel="noopener">medium</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
