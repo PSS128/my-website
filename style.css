@@ -248,6 +248,32 @@ h1 {
   border-bottom-color: #222;
 }
 
+.resume-download {
+  margin-top: 48px;
+  padding-top: 24px;
+  border-top: 1px solid #ddd;
+  text-align: center;
+}
+
+.resume-download-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  border: 1px solid #1a1a1a;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #1a1a1a;
+  text-decoration: none;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.resume-download-link:hover {
+  background: #1a1a1a;
+  color: #f7f5f2;
+}
+
 /* Expand All / Collapse All button */
 .toggle-all-btn {
   font-family: Georgia, 'Times New Roman', serif;
@@ -915,18 +941,23 @@ h1 {
   transform: translateX(3px);
 }
 
-/* Personal section — visually lighter */
-.about-personal p {
-  font-size: 15px;
-  color: #555;
-  line-height: 1.75;
+.about-medium-cta {
+  margin-bottom: 36px;
 }
 
-.about-personal-intro {
-  font-style: italic;
-  color: #888 !important;
-  margin-bottom: 6px !important;
-  font-size: 14px !important;
+.about-hint {
+  max-width: 680px;
+  margin: 0 auto;
+  padding-top: 18px;
+  border-top: 1px solid #e0ddd8;
+}
+
+.about-hint p {
+  font-family: 'Inter', -apple-system, sans-serif;
+  font-size: 13px;
+  line-height: 1.6;
+  color: #777;
+  margin: 0;
 }
 
 /* Scroll reveal */
@@ -1482,6 +1513,100 @@ h1 {
   font-size: 13px;
   color: #9a8154;
   letter-spacing: 0.18em;
+}
+
+.books-read-body {
+  background: #efe8d8;
+}
+
+.books-read-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.books-read-book {
+  width: min(760px, 100%);
+}
+
+.books-home-link {
+  position: absolute;
+  top: 28px;
+  left: 34px;
+  z-index: 4;
+  color: #8a7656;
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 24px;
+  line-height: 1;
+  text-decoration: none;
+  transition: color 0.25s ease, transform 0.25s ease;
+}
+
+.books-home-link:hover,
+.books-home-link:focus-visible {
+  color: #2a2118;
+  transform: translateX(-3px);
+}
+
+.books-home-link:focus-visible {
+  outline: 1px solid #8a7656;
+  outline-offset: 6px;
+}
+
+.books-read-title {
+  font-size: clamp(44px, 7.5vw, 82px);
+  letter-spacing: 0.01em;
+  line-height: 1.05;
+}
+
+.books-read-epigraph {
+  max-width: 520px;
+  margin: 0 auto;
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 20px;
+  font-style: italic;
+  line-height: 1.45;
+  color: #5a4a32;
+  text-align: center;
+}
+
+.books-read-shelf {
+  max-width: 580px;
+  margin: 0 auto;
+}
+
+.books-read-list {
+  list-style: decimal-leading-zero;
+  margin: 0;
+  padding-left: 44px;
+}
+
+.books-read-list li {
+  padding: 14px 0 13px 10px;
+  border-bottom: 1px solid rgba(184, 153, 104, 0.26);
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  color: #b89968;
+}
+
+.books-read-list li:last-child {
+  border-bottom: none;
+}
+
+.books-read-name {
+  display: block;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 21px;
+  line-height: 1.25;
+  color: #4a3e2a;
+}
+
+.books-read-note {
+  display: block;
+  margin-top: 4px;
+  font-size: 15px;
+  font-style: italic;
+  line-height: 1.35;
+  color: #8a7656;
 }
 
 /* Book-page responsive */
@@ -2391,6 +2516,26 @@ body.is-threshold .threshold-book {
   transform: translateY(-50%) rotate(2deg);
 }
 
+body.is-threshold .threshold-secret-book {
+  display: block;
+  pointer-events: auto;
+  cursor: pointer;
+  text-decoration: none;
+  outline-offset: 12px;
+  transition: opacity 0.6s ease, transform 0.6s ease, filter 0.6s ease;
+}
+
+body.is-threshold .threshold-secret-book:hover,
+body.is-threshold .threshold-secret-book:focus-visible {
+  opacity: 0.92;
+  transform: translateY(-50%) rotate(1deg) scale(1.04);
+  filter: drop-shadow(0 0 18px rgba(220, 200, 168, 0.18));
+}
+
+body.is-threshold .threshold-secret-book:focus-visible {
+  outline: 1px solid var(--th-quiet);
+}
+
 body.is-threshold .threshold-pen {
   /* Pulled inward toward the center of the composition */
   left: clamp(110px, 14vw, 240px);
@@ -2725,6 +2870,21 @@ body.is-threshold.is-leaving {
   body.is-threshold .threshold-book {
     display: none;
   }
+
+  body.is-threshold .threshold-secret-book {
+    display: block;
+    top: auto;
+    right: clamp(28px, 6vw, 64px);
+    bottom: clamp(72px, 10vh, 112px);
+    height: 78px;
+    width: 60px;
+    transform: rotate(2deg);
+  }
+
+  body.is-threshold .threshold-secret-book:hover,
+  body.is-threshold .threshold-secret-book:focus-visible {
+    transform: rotate(1deg) scale(1.05);
+  }
 }
 
 @media (max-width: 480px) {
@@ -2733,4 +2893,10 @@ body.is-threshold.is-leaving {
   body.is-threshold .threshold-name { letter-spacing: 0.42em; }
   body.is-threshold .reverie-fragments li:nth-child(2),
   body.is-threshold .reverie-fragments li:nth-child(3) { padding-left: 0; }
+  body.is-threshold .threshold-secret-book {
+    right: 22px;
+    bottom: 34px;
+    height: 58px;
+    width: 45px;
+  }
 }
