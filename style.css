@@ -151,6 +151,13 @@ h1 {
   border-radius: 8px 8px 0 0;
 }
 
+.project-img-document {
+  height: auto;
+  object-fit: cover;
+  object-position: top center;
+  background: #fff;
+}
+
 .project-header {
   display: flex;
   align-items: baseline;
